@@ -1,4 +1,4 @@
-Repository,Description,ReadMe,Purpose,Languages,Lang Size by Bits
+Repository,Description,ReadMe,Purpose,New Description,Languages,Lang Size by Bits
 AgilTec/cadenero,Rails.API Authentication Engine for multitenant RESTful APIs,"![Cadenero Logo](https://raw.github.com/AgilTec/cadenero/master/cadenero.logo.png)
 By [![Agiltec Logo](https://launchrock-assets.s3.amazonaws.com/logo-files/GpujzvLXPPqzAcz.png)](http://agiltec.github.io/).
 
@@ -244,7 +244,7 @@ MIT License. Copyright 2013 AgilTec. http://agiltec.com.mx
 You are not granted rights or licenses to the trademarks of the AgilTec, including without limitation the **Cadenero** name or logo.
 
 
-This project rocks and uses MIT-LICENSE.",Authentication engine for consumers of multitenant RESTful APIs,"['Ruby', 'JavaScript']","[76700, 13073]"
+This project rocks and uses MIT-LICENSE.",Authentication engine for consumers of multitenant RESTful APIs,Ruby implementation of a Ruby on Rails API Authentication Engine for consumers of multitenant RESTful APIs,"['Ruby', 'JavaScript']","[76700, 13073]"
 brenoc/opentracks,A Flask/Python client for Open-Transactions.,"
 ![](http://i.imgur.com/p8bnuiZ.png) Open Tracks ![project unmaintained](https://img.shields.io/badge/project-unmaintained-red.svg)
 ==========
@@ -261,7 +261,7 @@ I don't know any alternatives to suggest. Please, feel free to open an issue if 
 Check out some [screenshots](https://imgur.com/a/BYQ24)
 
 Interested? Please take 10 minutes to read our [Wiki](https://github.com/brenoc/opentracks/wiki).
-",open-source Open-Transactions project,"['Python', 'HTML', 'JavaScript', 'CSS']","[301396, 103391, 23153, 1292]"
+",open-source Open-Transactions project,Python implementated Flask microweb client for the open-source financial technology Open-Transactions project.,"['Python', 'HTML', 'JavaScript', 'CSS']","[301396, 103391, 23153, 1292]"
 onaio/onadata,"Collect, Analyze and Share","Ona Platform
 =================
 
@@ -434,7 +434,7 @@ Fake initial migration of `guardian`, `django_digest`, `registration`. Migrate `
 
 **Major django changes affecting Ona**
 * The DATABASES settings key depricates the use of the *autocommit* setting in the *OPTIONS* dictionary.
-",data collection/analyzation/sharing,"['Python', 'JavaScript', 'HTML', 'CSS', 'Shell', 'Makefile', 'Dockerfile']","[3206425, 674825, 249406, 70153, 30222, 2611, 1864]"
+",data collection/analyzation/sharing,Python implemented platform for data collection/analyzation/sharing platform that utilizes the Sphinx and Django frameworks.,"['Python', 'JavaScript', 'HTML', 'CSS', 'Shell', 'Makefile', 'Dockerfile']","[3206425, 674825, 249406, 70153, 30222, 2611, 1864]"
 alu0100536829/prct11,,"# MatrixExpansion
 
 ## Introducción
@@ -459,7 +459,7 @@ Or install it yourself as:
 ## Diseño
 
 A la hora de realizar las matrices densas se ha realizado de forma natural (como para cualquier matriz simple). El planteamiento importante es para la representación de las matrices dispersas. Hemos decidido finalmente, tras haber pensado en implementarlo con varios vectores, en que era más sencillo, tanto para el acceso como para las operaciones, implementarlo con un array de hash. Cada fila es un array que contiene hashes, donde la clave es la columna del elemento no nulo y el valor es el propio valor del elemento no nulo. De esta  forma, solamente se almacenan los valores nulos. Si se accediera a otra posición se devolvería 0 (aunque este no este almacenado en la matriz dispersa para ahorrar memoria).
-",,['Ruby'],[32791]
+",,,['Ruby'],[32791]
 clementine-player/Android-Remote,Control Clementine from your Android device,"Android-Remote [![Build Status](https://travis-ci.org/clementine-player/Android-Remote.svg)](https://travis-ci.org/clementine-player/Android-Remote)
 ==============
 
@@ -517,7 +517,7 @@ __PERMISSIONS:__
 * android.permission.READ_PHONE_STATE: Is needed to detect calls and lower Clementine volume.
 * android.permission.WRITE_EXTERNAL_STORAGE: For downloading songs.
 * com.android.vending.BILLING: Is needed for doing donations.
-",remote control of Clementine,"['Java', 'HTML']","[611522, 2710]"
+",remote control of Clementine,"Java implemented android application for remote control of Clemantine, an open-source music player. || Java powered android application for remote control of Clemantine, an open-source music player.","['Java', 'HTML']","[611522, 2710]"
 rafallo/p2c,New way to watch video!,"P2C
 ===
 
@@ -542,7 +542,7 @@ Application can download movie and play retrieved parts. Some people call it ""p
 
 1. Install requirements
 1. ```git clone git+ssh://git@github.com/rafallo/p2c.git```
-1. ```python3.2 gui/desktop/main.py```",streaming pre-downloade content ,['Python'],[241891]
+1. ```python3.2 gui/desktop/main.py```",streaming pre-downloade content ,Python powered desktop application for streaming pre-downloaded content through the Bittorent communication protocal.,['Python'],[241891]
 gfx/Android-HankeiN,Location Memos on the Map,"# Hankei-N [![Build Status](https://secure.travis-ci.org/gfx/Android-HankeiN.png)](http://travis-ci.org/gfx/Android-HankeiN)
 
 
@@ -593,12 +593,12 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
-",location memos,['Java'],[100254]
+",location memos,,['Java'],[100254]
 Ydle/RoomBundle,Manage Rooms for the YDLE Project - http://www.ydle.fr,"RoomBundle
 ==========
 
 Manage Rooms for the YDLE Project - http://www.ydle.fr
-",manage rooms component of YDLE Project,['PHP'],[45817]
+",manage rooms component of YDLE Project,"PHP powered program to manage the rooms component of the YDLE Project, a DIY home automation system.",['PHP'],[45817]
 zeronullity/SDRwatchdog,SDR multiple signal monitoring with P25 & SmartNet trunking support.,"***UNDER CONSTRUCTION***
 - Currently only supports SMARTNET/P25 trunk recording with multiple SDR devices on a single trunking system.
 
@@ -659,8 +659,8 @@ Here are the column headers and some sample data:
 |2227 |	8b3	| D	| DC StcarYard	| Streetcar Yard |	Transportation |	Services | 3 | 
 
 
-",multiple signal monitoring,"['C++', 'CMake']","[156374, 71228]"
-linchproject/linch-servlet,,Dispatcher servlet for a Linch application,servlet for a linch application,['Java'],[20524]
+",multiple signal monitoring,A C++ powered SDR (software defined radio) program utilizing the GNU Radio toolkit for multiple signal monitoring.,"['C++', 'CMake']","[156374, 71228]"
+linchproject/linch-servlet,,Dispatcher servlet for a Linch application,servlet for a linch application,A Java dispatcher servlet for a linch application,['Java'],[20524]
 tuanhiep/mqtt-jmeter,This is the plugin for Jmeter to Test MQTT protocol,"mqtt-jmeter
 ===========
 
@@ -846,7 +846,7 @@ the topic in one session
   http://www.liglab.fr/erods?lang=fr&var_mode=calcul 
   
     
-",test MQTT protocal,"['Java', 'Shell']","[98619, 4633]"
+",test MQTT protocal,A Java plugin for Apache Jmeter to test the Message Queing Telemetry Transport (MQTT) protocal.,"['Java', 'Shell']","[98619, 4633]"
 zeisler/active_mocker,Generate mocks from ActiveRecord models for unit tests that run fast because they don’t need to load Rails or a database.,"# ActiveMocker
 [![Gem Version](https://badge.fury.io/rb/active_mocker.svg)](http://badge.fury.io/rb/active_mocker)
 [![Build Status](https://travis-ci.org/zeisler/active_mocker.svg?branch=master)](https://travis-ci.org/zeisler/active_mocker)
@@ -1290,7 +1290,7 @@ Your contributions are welcome!
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
-",create fast stub classes from ActiveRecord Model ,"['Ruby', 'HTML', 'CSS', 'JavaScript']","[255310, 11304, 683, 664]"
+",create fast stub classes from ActiveRecord Model ,Ruby program with MRI (Matz's Ruby Interpreter) implementation to create stub classes directly from an ActiveRecord Model for improved speed.,"['Ruby', 'HTML', 'CSS', 'JavaScript']","[255310, 11304, 683, 664]"
 NSLS-II/pyRafters,Image processing tools for computed tomography,"pyRafters
 ==============
 
@@ -1346,7 +1346,7 @@ Example Tools
 
 
 The tools in `pyRafters.tools` are intended to provide a template for adding new tools.
-",computation tomograophy image processing tools,"['Python', 'Shell']","[125428, 6712]"
+",computation tomograophy image processing tools,A python implemented interface layer for computation tomograohpy (CT) image processing tools.,"['Python', 'Shell']","[125428, 6712]"
 liquidise/Quickbase-Gem,Ruby Gem for rapid interfacing with Intuit Quickbase,"#AIS QuickBase Ruby Gem
 
 [![Gem Version](https://badge.fury.io/rb/advantage_quickbase.svg)](http://badge.fury.io/rb/advantage_quickbase)
@@ -1504,7 +1504,7 @@ Create an app token that gives you access to that Quickbase app
 ```ruby
 app_token = qb_api.create_app_token( 'abcd1234', 'Access all the books in the database', 'TugHxxkil9t6Kdebac' )
 ````
-",rapid interfacing with Quickbase API calls,['Ruby'],[24958]
+",rapid interfacing with Quickbase API calls,A Ruby project utilizing Ruby Gem package manager for rapid interfacing with Quickbase API calls. ,['Ruby'],[24958]
 franksl/ncsvlib,,"# NCsvLib
 
 ## Introduction
@@ -1527,7 +1527,7 @@ http://sourceforge.net/projects/ncsvlib/
 
 Simply copy NCsvLib.dll in the same directory of your project executables.
 The file LICENSE should be deployed with NCsvLib.dll.
-",writing structured text files/streams,['C#'],[148268]
+",writing structured text files/streams,A C# .NET framework library for writing 'structured' text files/streams (structure manually indicated).,['C#'],[148268]
 sangotaro/my-boxen,,"# Our Boxen
 
 This is a template Boxen project designed for your organization to fork and
@@ -1846,7 +1846,7 @@ you will need to set the `BOXEN_GITHUB_ENTERPRISE_URL` and
 See [FAQ](https://github.com/boxen/our-boxen/blob/master/docs/faq.md).
 
 Use Issues or #boxen on irc.freenode.net.
-",manage mac development environments,"['Ruby', 'Puppet', 'Shell']","[13005, 3394, 1280]"
+",manage mac development environments,A Ruby project utilizing xcode (MacOS integrated development environement) and Ruby Gem (package manager) for a template Boxen project to manage mac development environements.,"['Ruby', 'Puppet', 'Shell']","[13005, 3394, 1280]"
 marsender/atoll-digital-library,Atoll Digital Library is a document publishing system that allows users to create their own digital library.,"
 ## Atoll Digital Library ##
 
@@ -1860,7 +1860,7 @@ Read the LICENSE file for more about the license.
 Read the INSTALL file for prerequisites and installation instructions.
 
 Project home page: [Atoll Digital Library](https://atoll-digital-library.org/en).
-",create personal ebook library collections,"['C++', 'HTML', 'CMake', 'Makefile', 'XSLT', 'NSIS', 'Batchfile', 'Shell', 'C', 'CSS']","[1695768, 73172, 54943, 32364, 20484, 9380, 4507, 1341, 407, 282]"
+",create personal ebook library collections,A C++ powered online document publishing platform allowing users to create personal ebook library collections.,"['C++', 'HTML', 'CMake', 'Makefile', 'XSLT', 'NSIS', 'Batchfile', 'Shell', 'C', 'CSS']","[1695768, 73172, 54943, 32364, 20484, 9380, 4507, 1341, 407, 282]"
 mikesname/blueprints-sql-graph,Noddy JDBC Blueprints implementation. Use at your own risk.,"Quick and dirty SQL/JDBC implementation for ""Blueprints"":https://github.com/tinkerpop/blueprints.
 
 Written solely for the sake of it.
@@ -1921,15 +1921,15 @@ h3. Potential optimisations.
 This is more of a toy than an serious attempt at performant graph database backed by an RDBMS. As such, there are
 no optimizations done either at the schema level or in the codebase above declaring indexes on frequently accessed
 columns.
-","implement ""Blueprints"" project's generic Graph API",['Java'],[69472]
-SomethingExplosive/android_frameworks_av,SoMeX android_frameworks_av,,,"['C++', 'C', 'Assembly', 'Objective-C', 'Perl', 'Shell']","[13539789, 9915253, 1218838, 196955, 7262, 640]"
+","implement ""Blueprints"" project's generic Graph API","A Java SQL/JDBC (Java Database Connectivity) implementation of the Apache Tinkerpop's ""Blueprints"" project's generic Graph API.",['Java'],[69472]
+SomethingExplosive/android_frameworks_av,SoMeX android_frameworks_av,,,,"['C++', 'C', 'Assembly', 'Objective-C', 'Perl', 'Shell']","[13539789, 9915253, 1218838, 196955, 7262, 640]"
 wardrobecms/locales,Wardrobe Language Files,"Wardrobe Language Files
 =======================
 
 To create a new language pack please clone this repo and add new files into the lang/ folder. Please put yours in a sub folder for the region.
 
 To use these with your install download the files and move the lang/:yourlang: into your Wardrobe app/lang folder.
-",provide extra language files for Wardrobe blog,['PHP'],[140849]
+",provide extra language files for Wardrobe blog,PHP program providing extra language files for your blog on Wardrobe.,['PHP'],[140849]
 lbitonti/liquibase-hana,Liquibase Hana extension,"Liquibase extension that provides support for  SAP Hana DB.
 
 Initial Hana DB support is currently implemented in the 2.0.x and 3.0.x branches. The master branch at the moment follows 3.4.x and it's built against version 3.4.2 of Liquibase.
@@ -1979,7 +1979,7 @@ RenameTableGenerator
 RenameViewGenerator
 SetNullableGenerator
 
-",track database changes on SAP HANA database management system,['Java'],[252087]
+",track database changes on SAP HANA database management system,A Java Liquibase extension to support tracking database changes on SAP HANA database management system.,['Java'],[252087]
 Querela/ekIRC,A Java IRC Chat implementation,"ekIRC
 =====
 
@@ -2009,14 +2009,14 @@ Some parts of the source code are from/were inspired by:
 
  - pircbotx
   - http://code.google.com/p/pircbotx/ (project home on google code)
-",implment Internet Relay Chat (IRC),['Java'],[325793]
+",implment Internet Relay Chat (IRC),"A Java implementation of the Internet Relay Chat (IRC). (the original one is also good. ""A Java IRC Chat implementation"")",['Java'],[325793]
 tbruyelle/HappyContacts,Birthday and name-day reminder for Android,"Dependencies
 ==========
 
 * libs directory
 * facebook for android : you need to clone the repo https://github.com/facebook/facebook-android-sdk/tree/master/facebook
 and add as a library dependency to HappyContacts
-",remind users of birthdays and name-days,"['Java', 'Shell']","[409437, 830]"
+",remind users of birthdays and name-days,A Java program for Android that utilizes the Facebook-Android-sdk library to reminds users of birthdays and name-days.,"['Java', 'Shell']","[409437, 830]"
 videolan/x265,https://bitbucket.org/multicoreware/x265/ git mirror,"=================
 x265 HEVC Encoder
 =================
@@ -2031,7 +2031,7 @@ downloading and building the source.
 
 x265 is free to use under the `GNU GPL `_ 
 and is also available under a commercial `license `_ 
-",high efficiency video coding,"['Assembly', 'C++', 'C', 'CMake', 'Batchfile', 'Shell']","[6608380, 5265652, 262055, 64334, 13662, 3846]"
+",high efficiency video coding,"An Assembly, C++, and C powered open-source encoder for High Efficiency Video Coding (HEVC).","['Assembly', 'C++', 'C', 'CMake', 'Batchfile', 'Shell']","[6608380, 5265652, 262055, 64334, 13662, 3846]"
 xenserver/xsconsole,,"What is this repository ?
 ==========================
 
@@ -2050,7 +2050,7 @@ What other documentation is available ?
 ========================================
 
 To install xsconsole for XenServer please read INSTALL.
-",get and set XenServer information                                                                                                          ,"['Python', 'Makefile', 'Shell', 'Ruby']","[745241, 8517, 5716, 5338]"
+",get and set XenServer information                                                                                                          ,A Python based GUI utilizing the ncurses library toolkit to get and set XenServer information from within a domain console.,"['Python', 'Makefile', 'Shell', 'Ruby']","[745241, 8517, 5716, 5338]"
 higanworks-cookbooks/mruby,Install mruby,"mruby Cookbook
 ==============
 
@@ -2402,7 +2402,7 @@ Authors:  Yukihiko Sawanobori (HiganWorks LLC)
 
 under MIT License
 
-",install mruby,['Ruby'],[5480]
+",install mruby,A Cookbook in Ruby Language that installs mruby (ightweight Ruby).,['Ruby'],[5480]
 muchomasfacil/WysiwygBundle,"This bundles makes really easy to add ckeditor4, tinymce4 to your forms inputs with per input field settings. Optional integrate the elfinder file manager. You extend it to use with your prefered editors.","# WysiwygBundle
 
 This bundles makes really easy to add a ckeditor4, tinymce4 to your forms with per input field settings. Optional integrate the elfinder file manager. You extend it to use with your prefered editors.
@@ -2453,7 +2453,7 @@ ckeditor with ajax requests
 
             })( jQuery );
 
-git clone git@github.com:Studio-42/elFinder.git ./vendor/studio-42/elfinder",provide additional WYSIWYG (what you see is what you get editing) functionality to preferred editors,['PHP'],[16964]
+git clone git@github.com:Studio-42/elFinder.git ./vendor/studio-42/elfinder",provide additional WYSIWYG (what you see is what you get editing) functionality to preferred editors,"A PHP implementation software bundle providing WYSIWYG (What You See Is What You Get editing) functionality to your preferred editors. (extra: This program enables users to edit forms, specifically input field settings, in a state resembling the finished product.)",['PHP'],[16964]
 jgauffin/SipSharp,Partial implementation of a SIP stack (RFC3261 etc),"This is a SIP stack which I created a long time ago. 
 
 
@@ -2500,7 +2500,7 @@ Steps 3 and 4 doesn't depend on the earlier steps. Feel free to do them.
 
 The goal is to have a complete stack which I can use in our voip system.
 
-",implement a session initiation protocl (SIP) stack,['C#'],[633711]
+",implement a session initiation protocl (SIP) stack,A C# partial implementation of a Session Initiation Protocol (SIP) stack.,['C#'],[633711]
 jessy1092/jackpad,Hackpad Java API,"#Overview
 
 [![Build Status](https://travis-ci.org/jessy1092/jackpad.png?branch=master)](https://travis-ci.org/jessy1092/jackpad)
@@ -2563,7 +2563,7 @@ GitHub issue tracker: https://github.com/jessy1092/jackpad/issues
 
 The code is available at github project under [MIT License](https://github.com/jessy1092/jackpad/blob/master/LICENSE)
 
-",Hackpad's API,['Java'],[8330]
+",Hackpad's API,"A Java Client library for the web-based, collaborative, real-time text-editor Hackpad's API.",['Java'],[8330]
 spring-projects/spring-net-codeconfig,Provides the ability to configure a Spring container using standard .NET code instead of or in addition to XML.   configuration,"The Spring.NET CodeConfig project, Release 2.0.0 (8/31/2012)
 --------------------------------------------------------------------
 https://github.com/SpringSource/spring-net-codeconfig
@@ -2646,7 +2646,7 @@ InnovSys has kindly provided a license to generate the SDK documentation and sup
 
 10. Contributing to Spring.NET CodeConfig
 
-Github is for social coding: if you want to write code, we encourage contributions through pull requests from forks of this repository (see http://help.github.com/forking/). Before we accept a non-trivial patch or pull request we will need you to sign the contributor's agreement (see https://support.springsource.com/spring_committer_signup). Signing the contributor's agreement does not grant anyone commit rights to the main repository, but it does mean that we can accept your contributions, and you will get an author credit if we do. Active contributors might be asked to join the core team, and given the ability to merge pull requests.",enable configuration of the Spring Framework's container,"['XSLT', 'C#', 'CSS', 'ASP', 'Shell']","[2904336, 287494, 9268, 8520, 4613]"
+Github is for social coding: if you want to write code, we encourage contributions through pull requests from forks of this repository (see http://help.github.com/forking/). Before we accept a non-trivial patch or pull request we will need you to sign the contributor's agreement (see https://support.springsource.com/spring_committer_signup). Signing the contributor's agreement does not grant anyone commit rights to the main repository, but it does mean that we can accept your contributions, and you will get an author credit if we do. Active contributors might be asked to join the core team, and given the ability to merge pull requests.",enable configuration of the Spring Framework's container,An XSLT and C# program that enables configuration of the Spring Framework's container with .NET code. ,"['XSLT', 'C#', 'CSS', 'ASP', 'Shell']","[2904336, 287494, 9268, 8520, 4613]"
 Skobayashi/Weather,引数に地名を与えて明日の天気を取得するコマンドラインツール,"TripleI.Weather  [![Build Status](https://travis-ci.org/Skobayashi/Weather.svg?branch=master)](https://travis-ci.org/Skobayashi/Weather) [![Coverage Status](https://coveralls.io/repos/Skobayashi/Weather/badge.png?branch=master)](https://coveralls.io/r/Skobayashi/Weather?branch=master) 
 =======
 引数に地名を与えて明日の天気を返すコマンドラインツールです。  
@@ -2669,7 +2669,7 @@ http://weather.livedoor.com/weather_hacks/webservice
  $ 晴のち曇
  $ 最高気温 16 度
  $ 最高気温 8 度
-```",,['PHP'],[4913]
+```",,,['PHP'],[4913]
 gpac/gpac,GPAC main code repository,"[![Build Status](https://tests.gpac.io/testres/badge/build/ubuntu64)](https://buildbot.gpac.io/#/grid?branch=master)
 [![Tests](https://tests.gpac.io/testres/badge/tests/linux64)](https://tests.gpac.io/)
 
@@ -2711,7 +2711,7 @@ For GPAC configuration instruction, check gpac/doc/configuration.html or gpac/do
 For more information, visit the GPAC website:
 	http://gpac.io
 
-",multimedia framework,"['C', 'C++', 'JavaScript', 'Java', 'Shell', 'Makefile', 'XSLT', 'Objective-C', 'NSIS', 'Rebol', 'GLSL', 'Assembly', 'Batchfile', 'HTML', 'CSS']","[22468761, 4281484, 640571, 192846, 151865, 141231, 34677, 34513, 24436, 13726, 13036, 12073, 8094, 4771, 1796]"
+",multimedia framework,A C and C++ powered multimedia framework for interactive/rich media.,"['C', 'C++', 'JavaScript', 'Java', 'Shell', 'Makefile', 'XSLT', 'Objective-C', 'NSIS', 'Rebol', 'GLSL', 'Assembly', 'Batchfile', 'HTML', 'CSS']","[22468761, 4281484, 640571, 192846, 151865, 141231, 34677, 34513, 24436, 13726, 13036, 12073, 8094, 4771, 1796]"
 rhq-project/wildfly-cassandra,ARCHIVED - Cassandra integration with Wildfly ,"
 
 # Cassandra Subsystem
@@ -2837,7 +2837,7 @@ The best way to reach out and discuss the cassandra subsystem is currently the R
 - https://docs.jboss.org/author/display/WFLY8/Documentation
 - http://www.datastax.com/documentation/cassandra/2.0/cassandra/gettingStartedCassandraIntro.html
 
-",integrate Apache Cassandra with Wildfly,"['Java', 'Shell']","[55043, 261]"
+",integrate Apache Cassandra with Wildfly,A Java program that integrates Apache Cassandra (a NoSQL database management system) with Wildfly (an application server).,"['Java', 'Shell']","[55043, 261]"
 NathanSweet/dnsmadeeasy,Dynamic DNS updater for DnsMadeEasy,"# DnsMadeEasy DNS Update
 
 This is a simple tool that periodically updates your IP when it changes for [DnsMadeEasy](http://www.dnsmadeeasy.com/)'s dynamic DNS. It works on Windows (EXE file provided), Mac, and Linux.
@@ -2876,7 +2876,7 @@ The tool creates a `~/.dnsmadeeasy/dnsmadeeasy.log` file that contains timestamp
 ## License
 
 The tool is released as OSS under the [New BSD license](https://github.com/EsotericSoftware/dnsmadeeasy/blob/master/LICENSE).
-",periodically updates dynamic DNS IP changes for DNSMadeEasy,['Java'],[5107]
+",periodically updates dynamic DNS IP changes for DNSMadeEasy,A Java powered tool that periodically updates the dynamic DNS (domain name system) IP changes for DNSMadeEasy (an enterprise DNS provider).,['Java'],[5107]
 Stibbons/pyyaml,,"PyYAML - The next generation YAML parser and emitter for Python.
 
 To install, type 'python setup.py install'.
@@ -2929,7 +2929,7 @@ Cloned by:
 Package built with
 
     python setup.py sdist
-",,"['C', 'Python']","[981189, 670316]"
+",,,"['C', 'Python']","[981189, 670316]"
 emersion/bups,"Simple GUI for Bup, a very efficient backup system.","Bups
 ====
 
@@ -2978,7 +2978,7 @@ You can edit config with the GUI. You can also manually edit `~/.config/bups/con
 The project is on Transifex: https://www.transifex.com/emersion/bups/
 
 You can also email me `.po` files if you don't want to register on Transifex. Download the source and run `tools/makepot.sh` to generate `lang/messages.pot`.
-",GUI for BUP backup system,"['Python', 'Shell']","[65097, 671]"
+",GUI for BUP backup system,A Python implemented GUI for the BUP backup system utilizing the GTK 4 tookit. ,"['Python', 'Shell']","[65097, 671]"
 aelarabawy/glib,"This is a mirror to the glib library source code, with my own updates. The code follows the same original license of the original code","glib
 ====
 
@@ -3004,8 +3004,8 @@ While I will use this repo (on Github) to push my own updates
 $ git push own master
 
 If I find something real useful, I will suggest to add to the original repo
-",mirror to Glib low-level system libraries,"['C', 'Python', 'C++', 'Objective-C', 'Perl', 'Shell', 'Makefile', 'D', 'Emacs Lisp']","[20635125, 314882, 113012, 59301, 51602, 29589, 14821, 1133, 41]"
-sphaero/uae4all-rpi, UAE4All for Raspberry Pi,,emulator for raspberry Pi single-board computers,"['C', 'C++', 'Assembly', 'Makefile']","[1424903, 1226524, 38304, 3363]"
+",mirror to Glib low-level system libraries,"A C, Python, and C++ implemented mirror to to the GLib low-level system libraries with some updates.","['C', 'Python', 'C++', 'Objective-C', 'Perl', 'Shell', 'Makefile', 'D', 'Emacs Lisp']","[20635125, 314882, 113012, 59301, 51602, 29589, 14821, 1133, 41]"
+sphaero/uae4all-rpi, UAE4All for Raspberry Pi,,emulator for raspberry Pi single-board computers,A C and C++ powered UAE4All emulator for Raspberry Pi single-board computers.,"['C', 'C++', 'Assembly', 'Makefile']","[1424903, 1226524, 38304, 3363]"
 DragonSpawn/Json2Class,"Generates class objects from Json strings, along with methods to read/write these json strings with the classes","Json2Class
 =============
 This is a little tool written in Python 2.7 which generates class definitions from json files that are supplied to it.
@@ -3049,7 +3049,7 @@ View [Getting Started](GettingStarted.md) for requirements and more details into
 #### [py/Generated/person.py](test/SampleProjects/PySample/Generated/person.py)
 #### [java/Generated/Person.java](test/SampleProjects/javaSample/src/main/java/Generated/Person.java)
 #### See [Getting Started](GettingStarted.md) for more information
-",generate class objects from json strings,"['Python', 'C#', 'Java']","[104260, 84311, 37872]"
+",generate class objects from json strings,A python and C# implemented project that generates class objects from json strings with read/write methods.,"['Python', 'C#', 'Java']","[104260, 84311, 37872]"
 wangduoxiong/Egg,一个通用的爬虫,"Egg 简介
 =====
 ## [Egg](https://github.com/wangduoxiong/Egg)
@@ -3109,7 +3109,7 @@ wangduoxiong/Egg,一个通用的爬虫,"Egg 简介
     * Parser是一个解析器，用来方便用户提取抓取数据中自己需要的东西
     * Handler是一个处理器，用来处理每次抓取之后的操作
     * Selector是一个选择器，用来判断是否是我们所需要的内容
-",,"['JavaScript', 'HTML', 'CSS', 'Java', 'PHP', 'Go', 'Python', 'CoffeeScript', 'Shell', 'Makefile', 'ApacheConf']","[3475959, 1217609, 817918, 121072, 49503, 6808, 5596, 4704, 2025, 1420, 36]"
+",,,"['JavaScript', 'HTML', 'CSS', 'Java', 'PHP', 'Go', 'Python', 'CoffeeScript', 'Shell', 'Makefile', 'ApacheConf']","[3475959, 1217609, 817918, 121072, 49503, 6808, 5596, 4704, 2025, 1420, 36]"
 chef/knife-ec2,Chef knife plug-in for AWS EC2,"# Knife EC2
 [![Gem Version](https://badge.fury.io/rb/knife-ec2.svg)](https://rubygems.org/gems/knife-ec2)
 [![Build status](https://badge.buildkite.com/6dce7349d1291de0f8a8c68a78cb6829067d5e44bec7c4c552.svg?branch=master)](https://buildkite.com/chef-oss/chef-knife-ec2-master-verify)
@@ -3449,7 +3449,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
-",manage EC2 instances on Chef workstation,"['Ruby', 'Shell']","[250279, 451]"
+",manage EC2 instances on Chef workstation,A Ruby powered Chef Knife plugin for AWS EC2 (Elastic Compute Cloud) on the Chef Workstation for configuration management.,"['Ruby', 'Shell']","[250279, 451]"
 crbanman/AstroidEscape,An arcade space survival game.,"Now Deprecated. Game has been redone in Unity3D.
 
 AstroidEscape - Android
@@ -3475,8 +3475,8 @@ Ideas
 - Option to change laser color
 - Unlock new ships with different weapons
 - add an indestructable object
-",arcade space survival game for Android,"['Java', 'CSS', 'JavaScript']","[71271, 3341, 24]"
-android-ia/platform_external_libsepol,,,,,
+",arcade space survival game for Android,A Java powered arcade space survival game for Android.,"['Java', 'CSS', 'JavaScript']","[71271, 3341, 24]"
+android-ia/platform_external_libsepol,,,,,,
 Serneum/jousting-core,A Python implementation of the To Cry a Joust rule set.,"[![Build Status](https://travis-ci.org/Serneum/jousting-core.svg?branch=master)](https://travis-ci.org/Serneum/jousting-core) [![Coverage Status](https://coveralls.io/repos/Serneum/jousting-core/badge.svg?branch=master)](https://coveralls.io/r/Serneum/jousting-core?branch=master)
 
 A Python implementation of the [To Cry a Joust](http://boardgamegeek.com/boardgame/124129/cry-joust) rule set.
@@ -3484,10 +3484,10 @@ A Python implementation of the [To Cry a Joust](http://boardgamegeek.com/boardga
 
 ### Installing jousting-core
 `pip install https://github.com/Serneum/jousting-core/releases/download/v1.0/jousting-core.tar.gz`
-",implmentation of the To Cry a Joust Board game rule set,['Python'],[33635]
+",implmentation of the To Cry a Joust Board game rule set,Their description is pretty good. /// A python implementation of the To Cry a Joust board game rule set.,['Python'],[33635]
 davidkempers/django-tasks,Automatically exported from code.google.com/p/django-tasks,"# django-tasks
 Automatically exported from code.google.com/p/django-tasks
-",automatic exportation,['Python'],[87815]
+",automatic exportation,Python implemented automatic export of Django tasks from the code.google.com website.,['Python'],[87815]
 Taapeli/ProtoLoader,Prototype for gedcom file loader,"Taapelin prototyyppi
 ====================
 
@@ -3518,7 +3518,7 @@ Prototyyppi sisältää nyt seuraavat ohjelmat:
 * listNames:		Tulostus nimen mukaan poimittuna
 
 * readIndividData:	Tulosta henkilön tiedot ja hänen esi- ja jälkipolvet
-",GEDCOM file loader,"['PHP', 'HTML', 'CSS']","[378877, 23114, 2247]"
+",GEDCOM file loader,A PHP based prototype for a GEDCOM (genealogical data communication) file loader.,"['PHP', 'HTML', 'CSS']","[378877, 23114, 2247]"
 vzvu3k6k/mcg_source_list,Markov Chain GeneratorのソースをTwitterから収集するWebサービス,"# MCG Source List
 
 [Markov Chain Generator](http://mcg.herokuapp.com/)のソースをTwitterから収集するサイトです。
@@ -3537,7 +3537,7 @@ vzvu3k6k/mcg_source_list,Markov Chain GeneratorのソースをTwitterから収�
 ## ライセンス
 
 [Creative Commons — CC0 1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/)
-",markov chain generator,"['Ruby', 'JavaScript', 'CSS']","[4214, 2035, 777]"
+",markov chain generator,,"['Ruby', 'JavaScript', 'CSS']","[4214, 2035, 777]"
 mthli/Tweetin,Yet another Twitter unofficial client for Lollipop.,"Tweetin
 =======
 
@@ -3585,7 +3585,7 @@ Just import the `Tweetin` folder with your __IntelliJ IDEA__.
 
 ## License:
 _[Apache License, Version 2.0](https://github.com/mthli/Tweetin/blob/master/LICENSE ""Apache License, Version 2.0"")_
-",unofficial Twitter client,"['Java', 'CSS']","[484005, 12409]"
+",unofficial Twitter client,"A Java implemented, unofficial Twitter client for Android mobile operating system, Lollipop.","['Java', 'CSS']","[484005, 12409]"
 uProxy/obfuscation,,"uTransformers
 =============
 
@@ -3663,7 +3663,7 @@ There are two stages to the build process:
 
 * The first stage is the process of building ```uTransformers.fte.js``` and ```uTransformers.rabbit.js``` using emscripten. This is done in a vagrant virutal machine. See ```vagrant/README.md``` for details. To ease the build process, these artifacts are checked into git when the their cc files change.
 * The second step of the build process runs jasmine tests with grunt. This produces artifacts in ```build/```. 
-",Transport layer obfuscation library,"['C++', 'JavaScript', 'Shell', 'Makefile', 'Python', 'M4', 'Ruby']","[27890, 13843, 3885, 1975, 1004, 566, 493]"
+",Transport layer obfuscation library,A C++ and JavaScript implemented Transport layer obfuscation library (which obscures the intended meaning of communication) for uProxy extension.,"['C++', 'JavaScript', 'Shell', 'Makefile', 'Python', 'M4', 'Ruby']","[27890, 13843, 3885, 1975, 1004, 566, 493]"
 hadleyrich/GerbLook,"A web based gerber renderer based on Python, gerbv and imagemagick held together with a little glue and string.","GerbLook
 =======
 Copyright 2013 Hadley Rich, nice technology Ltd.  
@@ -3683,7 +3683,7 @@ Running your own instance
 LICENSE
 -------
 BSD - See LICENSE file
-",formatting 2D binary images,"['Python', 'HTML', 'JavaScript', 'CSS']","[53358, 19627, 12421, 238]"
+",formatting 2D binary images,"A Python implemented web based gerber renderer for formatting 2D binary images based on the Gerber file viewer, gerbv, and the software suite image editor, ImageMagick.","['Python', 'HTML', 'JavaScript', 'CSS']","[53358, 19627, 12421, 238]"
 usgs/icoast,,"# iCoast Â©USGS 2013
 
 **Lead Scientist:** Karen Morgan - 
@@ -3735,7 +3735,7 @@ Page elements, graphics, icons, and images without attribution on the
 page or above are either the property of USGS or were freely available 
 for private or commercial use without restrictions or the need for 
 attribution.
-",compare crowdsourced coastal imagery from extreme weather events,"['PHP', 'JavaScript', 'CSS', 'HTML']","[2727536, 86191, 75049, 186]"
+",compare crowdsourced coastal imagery from extreme weather events,"A PHP based web application utilizing GeoNames, Jquery, and GeoSearch to compare 'crowdsourced' coastal imagery from before and after extreme weather events.","['PHP', 'JavaScript', 'CSS', 'HTML']","[2727536, 86191, 75049, 186]"
 structured-commons/tools,"SC-related reference tools, libraries and utilities","Example Structured Commons utilities
 ====================================
 
@@ -3927,8 +3927,8 @@ References
 .. [#] http://science.raphael.poss.name/aca2-draft-spec.html
 
 .. __: http://www.bibbase.org/network/publication/poss-altmeyer-thompson-jelier-academia20removingthepublishermiddlemanwhileretainingimpact-2014
-",example implementation of structured commons,"['Python', 'Shell']","[34405, 3234]"
-ntuosproj/fastalg-nfqueue,,,,"['C', 'Shell']","[59611, 8162]"
+",example implementation of structured commons,"Python implemented toolset, libraries, and utilities for an example implementation of Structured Commons.","['Python', 'Shell']","[34405, 3234]"
+ntuosproj/fastalg-nfqueue,,,,,"['C', 'Shell']","[59611, 8162]"
 OCA/banking-addons,Odoo Electronic Payment,"[![Runbot Status](https://runbot.odoo-community.org/runbot/badge/flat/173/12.0.svg)](https://runbot.odoo-community.org/runbot/repo/github-com-oca-bank-payment-173)
 [![Build Status](https://travis-ci.org/OCA/bank-payment.svg?branch=12.0)](https://travis-ci.org/OCA/bank-payment)
 [![Coverage Status](https://coveralls.io/repos/OCA/bank-payment/badge.png?branch=12.0)](https://coveralls.io/r/OCA/bank-payment?branch=12.0)
@@ -3964,7 +3964,7 @@ mission is to support the collaborative development of Odoo features and
 promote its widespread use.
 
 http://odoo-community.org/
-",addons and interface for Odoo's electronic payment component,"['Python', 'HTML', 'CSS']","[306174, 152264, 564]"
+",addons and interface for Odoo's electronic payment component,Python implemented addons and interface for Odoo's (an all-in-one business software) electronic payment component.,"['Python', 'HTML', 'CSS']","[306174, 152264, 564]"
 ldrumm/good-talk,"simple chat app with AES encryption in browser zmq/gevent message transport, and stateless (anonymous) usage","good-talk
 =========
 
@@ -3995,14 +3995,14 @@ Therefore, you *can* do encryption with Javascript, but before you do you should
 As such if you want to ensure real privacy, you should use something more trustworthy such as GPG.
 
 All that said, this application provides a ""better than nothing"" solution for proper OTR web chat, so you may find it useful.
-",experimental chatroom with in browser AES-encryption,"['Python', 'JavaScript']","[11092, 6327]"
+",experimental chatroom with in browser AES-encryption,"A Python and Javascript powered web application utilizing the Django framework, asynchronous messaging, and  coroutine-based networking for an experimental chatroom with in browser AES-encryption. ","['Python', 'JavaScript']","[11092, 6327]"
 tanel/bugsnag-qt,Bugsnag client for QT projects,"bugsnag-qt
 ==========
 
 Bugsnag client for QT projects
 
 [![Build Status](https://travis-ci.org/tanel/bugsnag-qt.svg?branch=master)](https://travis-ci.org/tanel/bugsnag-qt)
-",provide error monitoring and reporting for Qt projects ,"['C++', 'IDL', 'C']","[8732, 501, 293]"
+",provide error monitoring and reporting for Qt projects ,A C++ powered Bugsnag client to provide error-monitoring and reporting for Qt projects working to develop the Qt software framework (open-source widget toolkit for creating GUIs and cross-platform apps).,"['C++', 'IDL', 'C']","[8732, 501, 293]"
 gabepolk/double-dog,Simple POS system using Rails,"# Double Dog PoS
 
 A Point of Sales system built for Double Dog Hot Dogs.
@@ -4019,13 +4019,13 @@ A Point of Sales system built for Double Dog Hot Dogs.
 - As an employee, I want to sign into Double Dog PoS
 - As an employee, I want to create orders
   - Each order will have at least one item
-",point of sales (POS) system for double dog hot dogs,"['Ruby', 'CSS', 'JavaScript', 'CoffeeScript']","[55883, 859, 664, 211]"
+",point of sales (POS) system for double dog hot dogs,A Ruby implemented Point of Sales system for Double Dog Hot Dogs utilizing Ruby on Rails.,"['Ruby', 'CSS', 'JavaScript', 'CoffeeScript']","[55883, 859, 664, 211]"
 bryanjswift/simplenote-android,Android client for SimpleNote,"# This project is ancient - don't use it
 
 This is open sourcing of code for a Simplenote client built and released years ago.
 It will no longer function against the current Simplenote API. In fact, it is unlikely
 to even build against current Android SDKs.
-",android client for the note-taking application SimpleNote,['Java'],[252843]
+",android client for the note-taking application SimpleNote,"A Java implmented, no longer functioning open source Android client for the note-taking application SimpleNote.",['Java'],[252843]
 russellsimpkins-nyt/varnish-mmdb-vmod,A fork. Provides GeoIP lookup for varnish using libmaxminddb,"#Varnish vmod for GeoMaxMind DB
 https://www.maxmind.com/en/home
 
@@ -4102,7 +4102,7 @@ You can add tests in src/tests. Use src/tests/test01.vtc as an example or check 
 cd src
 make tests/*
 ```
-",provide GeoIP lookup functionality and integration with the Accuweather API,"['C', 'Ruby', 'C++', 'Shell']","[128605, 35423, 28065, 925]"
+",provide GeoIP lookup functionality and integration with the Accuweather API,"A forked, C implemented library (a VMOD) for Varnish Software to provide GeoIP lookup functionality and integration with the Accuweather API.","['C', 'Ruby', 'C++', 'Shell']","[128605, 35423, 28065, 925]"
 BobKingstone/Pedlar-Cart,e-commerce shopping cart package for laravel,"Pedlar-Cart Laravel Package
 ===============
 
@@ -4226,7 +4226,7 @@ It will also throw InvalidItemKeyException if an invalid update is passed to a c
 Notes
 ---
 
-Using dd() to view cart contents will interrupt Laravels Session storage functions and can prevent the cart from being updated.",provide a shopping cart feature for e-commerce sites utilizing Laravel web framework,['PHP'],[16869]
+Using dd() to view cart contents will interrupt Laravels Session storage functions and can prevent the cart from being updated.",provide a shopping cart feature for e-commerce sites utilizing Laravel web framework,A PHP implemented package to provide a shopping cart feature for e-commerce sites utilizing Laravel web framework.,['PHP'],[16869]
 semantic-dependency-parsing/toolkit,Semantic Dependency Parsing Toolkit,"# Semantic Dependency Parsing Toolkit
 
 This repository contains a Java toolkit for semantic dependency parsing. It has been developed in connection with two shared tasks:
@@ -4285,7 +4285,7 @@ Abbreviations:
 	FR: recall with respect to semantic frames
 	FF: F1 with respect to semantic frames
 	
-",semantic dependency parsing,"['Java', 'Shell']","[88844, 133]"
+",semantic dependency parsing,A Java implemented toolkit for semantic dependency parsing.,"['Java', 'Shell']","[88844, 133]"
 numat/threeflex,Python driver and command line tool for Micromeritics 3Flex surface characterization analyzers.,"3flex
 =====
 
@@ -4377,7 +4377,7 @@ If the analyzer is currently running, this should return an object of the form:
   ]
 }
 ```
-",Micromeritics' product 3Flex surface characterization,['Python'],[6288]
+",Micromeritics' product 3Flex surface characterization,"A Python implemented command line tool and IP driver for Micromeritics' (technology of small particles) product 3Flex, a surface charaterization analyzer.",['Python'],[6288]
 slowmoVideo/slowmoVideo,Official slowmoVideo repository,"slowmoVideo
 ===========
 
@@ -4453,7 +4453,7 @@ Finally, to see your translation “in action”, release the .ts file (this cre
 
 Now you can push your `.ts` file to git.
 
-",make videos slow motion,"['C++', 'CMake', 'Makefile', 'C', 'Objective-C++', 'CSS', 'Python', 'Shell', 'Objective-C']","[877984, 59081, 23214, 22313, 14361, 8176, 6445, 2493, 632]"
+",make videos slow motion,A C++ powered platform (Linux/Windows/Mac) to make videos slow motion.,"['C++', 'CMake', 'Makefile', 'C', 'Objective-C++', 'CSS', 'Python', 'Shell', 'Objective-C']","[877984, 59081, 23214, 22313, 14361, 8176, 6445, 2493, 632]"
 TroyShaw/troykanoid,Arkanoid clone in C,"##Troykanoid - an Arkanoid Clone written in C
 
 This is a basic Arkanoid clone written in C, using SDL and the Chipmunk physics engine.
@@ -4489,7 +4489,7 @@ To install these libraries in Ubuntu, type
 Ensure these libraries are present, then build by typing `make clean` followed by `make`. `make clean` is necessary first because it copies various resources files to the bin directory.
 
 To run, execute bin/game\_debug by typing `./bin/game_debug` from the root directory of the project.
-",1986 arcade game Arkanoid,"['C', 'HTML', 'Objective-C', 'Makefile', 'C++', 'Shell']","[74023, 12590, 9952, 3637, 1043, 242]"
+",1986 arcade game Arkanoid,A C implemented clone of the 1986 arcade game Arkanoid with additional save features.,"['C', 'HTML', 'Objective-C', 'Makefile', 'C++', 'Shell']","[74023, 12590, 9952, 3637, 1043, 242]"
 uakatt/kaikifs,"KaikiFS uses Cucumber, Capybara, Selenium, and RSpec to test KFS","KaikiFS
 =======
 
@@ -4546,7 +4546,7 @@ License
 
 Please see [LICENSE.md](LICENSE.md)
 
-",test the KFS file system,"['Ruby', 'Shell']","[84761, 1633]"
+",test the KFS file system,"A Ruby program to test the KFS file system using behavior-driven development toolkits and various testing frameworks including Cucumber, Capybara, Selenium, and RSpec.","['Ruby', 'Shell']","[84761, 1633]"
 Twisol/anachronism,An RFC-compliant implementation of the Telnet protocol,"# Anachronism
 Anachronism is a fully-compliant implementation of [the Telnet protocol][wiki-telnet]. Fallen
 out of favor in this day and age, most people only know it as a command-line
@@ -4705,7 +4705,7 @@ utilized, events are sent to the telopt callback provided to telnet_nvt_new().
 ## Credits
 Someone from #startups on Freenode IRC suggested the name (I'm sure as a joke).
 If you read this, remind me who you are so I can credit you properly!
-",an RFC-compliant Telnet network protocol,['C'],[35206]
+",an RFC-compliant Telnet network protocol,An API written in C that implements an RFC-compliant (RFC is a set of internet standards) Telnet network protocol (for biderectional interactive text-oriented communication with remote hosts).,['C'],[35206]
 jruby/jruby-ldap,JRuby/LDAP is a native LDAP implementation that uses JNDI to implement a Ruby/LDAP compatible API.,"JRuby/LDAP
 -----------
 
@@ -4720,7 +4720,7 @@ require 'rubygems'
 require 'ldap'
 
 And then use it like all tutorials of Ruby/LDAP show you.
-",binary-LDAP usage through Jruby,['Ruby'],[44600]
+",binary-LDAP usage through Jruby,A Ruby based API port for binary-LDAP usage through JRuby and implemted with native LDAP using the Java API JNDI libraries.,['Ruby'],[44600]
 collegedesis/bidwars,A little app for competitions to bid on DJs for The Best Brown Party. Maybe we'll expand this later to use for real events too! ,"Bidding application to get competitions to bid on DJs for [The Best Brown Party, Round 2](https://www.facebook.com/events/346163575480157/) on Feb 10th. 
 
 Competition sponsors are:
@@ -4733,7 +4733,7 @@ Competition sponsors are:
 * 7PM: Boiler Bhangra Hour
 * 8PM: Buckeye Mela
 * 9PM: Nachte Raho
-","bid for the best DJ at the Facebook Event ""The Best Brown Party""","['Ruby', 'CoffeeScript', 'JavaScript']","[38508, 1352, 663]"
+","bid for the best DJ at the Facebook Event ""The Best Brown Party""","A Ruby powered application to bid for the best DJ at the Facebook Event ""The Best Brown Party""","['Ruby', 'CoffeeScript', 'JavaScript']","[38508, 1352, 663]"
 TI-OpenLink/ti-utils_soldel_maintenance,calibrator and FW reposetories,"
 The calibrator and other useful utilities for TI wireless solution,
 based on wl12xx driver.
@@ -4943,9 +4943,9 @@ calibrator wlan0 plt power_mode off
 
 The project can be accessed from git repository:
 	git clone git://github.com/TI-OpenLink/ti-utils.git
-",configuration calibrator utilities for Texas Instruments wireless solutions,"['C', 'Python', 'Shell']","[211496, 3781, 367]"
-jittat/cafe-grader-judge-scripts,Judge scripts for Cafe grader.,,Judge scripts for the github project Caf� Grader,"['Ruby', 'C', 'C++', 'Shell', 'Makefile', 'HTML']","[119876, 106198, 31482, 18143, 2099, 692]"
-zopefoundation/zope.app.publication,Zope Application Publication and Traversal Components,Publication and traversal components.,publication and traversal components for Zope,['Python'],[136923]
+",configuration calibrator utilities for Texas Instruments wireless solutions,C implemented firmware and radio parameter configuration calibrator utilities for Texas Instruments wireless solutions.,"['C', 'Python', 'Shell']","[211496, 3781, 367]"
+jittat/cafe-grader-judge-scripts,Judge scripts for Cafe grader.,,Judge scripts for the github project Caf� Grader,Ruby and C implemented Judge scripts for the github project Caf� Grader.,"['Ruby', 'C', 'C++', 'Shell', 'Makefile', 'HTML']","[119876, 106198, 31482, 18143, 2099, 692]"
+zopefoundation/zope.app.publication,Zope Application Publication and Traversal Components,Publication and traversal components.,publication and traversal components for Zope,"Python implemented publication and traversal components for the open-source web application, Zope.",['Python'],[136923]
 metabrainz/libdiscid,C library for creating MusicBrainz DiscIDs from audio CDs,"A Library for creating MusicBrainz DiscIDs
 ------------------------------------------
 
@@ -4976,7 +4976,7 @@ More information can be found at the package's official homepage:
 
     http://musicbrainz.org/doc/libdiscid
 
-",creating DiscIDs from audio CDs for MusicBrainz collaborative music database,"['C', 'CMake', 'Makefile', 'M4', 'Shell']","[105826, 11097, 3815, 3496, 1435]"
+",creating DiscIDs from audio CDs for MusicBrainz collaborative music database,A C library for creating DiscIDs from audio CDs for MusicBrainz collaborative music database.,"['C', 'CMake', 'Makefile', 'M4', 'Shell']","[105826, 11097, 3815, 3496, 1435]"
 cemagg/sucem-fem,A finite element code for modelling electromagnetic phenomena by the Computational Electromagnetics Group at Stellenbosch University. Please see the wiki for more info.,"Welcome to the development site for SUCEM:FEM, a finite element modelling 
 package from the Computational Electromagnetics Group at Stellenbosch University, South Africa.
 
@@ -4987,7 +4987,7 @@ package from the Computational Electromagnetics Group at Stellenbosch University
 # Getting started
 
 See [http://github.com/cemagg/sucem-fem/wiki/Getting-Started]
-",finite element modelling for modelling electromagnetic phenomena,"['Python', 'Shell']","[354700, 125]"
+",finite element modelling for modelling electromagnetic phenomena,A python implemented package of finite element modelling  for modelling electromagentic phenomena.,"['Python', 'Shell']","[354700, 125]"
 zfsrogue/spl-crypto,Solaris Porting Layer with crypto functions,"The Solaris Porting Layer (SPL) is a Linux kernel module which provides
 many of the Solaris kernel APIs.  This shim layer makes it possible to
 run Solaris kernel code in the Linux kernel with relatively minimal
@@ -5022,7 +5022,7 @@ To run the full test suite:
 
 Full documentation for building, configuring, testing, and using the
 SPL can be found at: 
-",Solaris unix operating system to run as a Linux Kernel module with cryptographic functions,"['C', 'Shell', 'C++', 'Awk']","[954585, 26049, 14930, 334]"
+",Solaris unix operating system to run as a Linux Kernel module with cryptographic functions,A C implemented porting layer for the Solaris unix operating system to run as a Linux Kernel module with cryptographic functions.,"['C', 'Shell', 'C++', 'Awk']","[954585, 26049, 14930, 334]"
 packfire/concrete,Concrete: Rock solid PHAR compiler for PHP,"#Concrete
 
 [![Build Status](https://travis-ci.org/mauris/concrete.svg?branch=master)](https://travis-ci.org/mauris/concrete) [![Latest Stable Version](https://poser.pugx.org/mauris/concrete/v/stable.svg)](https://packagist.org/packages/mauris/concrete) [![Total Downloads](https://poser.pugx.org/mauris/concrete/downloads.svg)](https://packagist.org/packages/mauris/concrete)
@@ -5083,7 +5083,7 @@ Afterwhich, you will find the `concrete.phar` generated in the current working d
 ##License
 
 Concrete is released open source under the *BSD 3-Clause License*. See the `LICENSE` file in repository for details.
-",compiling a PHP application into PHAR binary file package format for distribution,['PHP'],[24116]
+",compiling a PHP application into PHAR binary file package format for distribution,A PHP based command-line interface tool for compiling a PHP application into PHAR binary file package format for distribution.,['PHP'],[24116]
 Elive/emodule-productivity,Pomodoro-like emodule application that helps you to fight procrastination by having control of your active windows that gives constant distractions,"Emodule-Productivity
 ====================
 
@@ -5152,7 +5152,7 @@ If you want to *try this application* but you can't compile it, an alternative a
 
 
 
-",control active windows and fite procrastination,"['C', 'Shell']","[81065, 516]"
+",control active windows and fite procrastination,A C implemented environment module application to control active windows and fight procrastination.,"['C', 'Shell']","[81065, 516]"
 ckw-mod/ckw-mod,ckw is yet another command prompt.,"/////////////////////////////////////////////
 // 概要
 
@@ -5188,7 +5188,7 @@ ckw-mod/ckw-mod,ckw is yet another command prompt.,"////////////////////////////
 
   改変版を作るにあたって多数の方のパッチを取り込ませていただきました。
   この場をお借りしてお礼申し上げます。
-",command prompt,"['C++', 'C', 'Shell']","[105898, 3318, 689]"
+",command prompt,A C++ implemented command prompt.,"['C++', 'C', 'Shell']","[105898, 3318, 689]"
 AgencyPMG/PMG-WP-Core,Useful utilities to make managing big WordPress sites easier.,"# PMG Core
 
 PMG Core is a collection of utilities that PMG uses on its own and its clients
@@ -5490,12 +5490,12 @@ descriptions
 
 A single CSS and JS enqueue for the admin area -- this to make some pretty tabs
 on metaboxes with multiple field sections.
-",provide utilities for easy management of WordPress sites,"['PHP', 'JavaScript', 'CSS']","[76496, 2851, 1125]"
-vivid-planet/kwf-newsletter-demo,Demo of a simple Newsletter System implemented using Koala Framework,,Newsletter System for web applications and websites,"['PHP', 'CSS']","[2638, 1071]"
-liu-chong/micropolis,"Open Source Micropolis, based on the original SimCity. sync from http://micropolis.googlecode.com/svn",,Micropolis program,"['C', 'C++', 'Tcl', 'Python', 'JavaScript', 'C#', 'Shell', 'PHP']","[3971740, 1285777, 869087, 842059, 222845, 13782, 5883, 1879]"
-CollectorsQuest/magnify-sdk,magnify.net API custom implementation,,video sharing platform,['PHP'],[37510]
-NESCent/Taxonomy-Ontology-Tool,"Tool for constructing taxonomic ontologies from different authoritative sources for hierarchy, currently valid names, and synonyms.","This project is a tool for constructing taxonomic ontologies in OBO format (OWL format using taxa as individuals is in development).  In addition to the source and unit test code, the project contains an output ontology and several sample xml configuration files.",,"['Java', 'Shell']","[260543, 338]"
-mteodori/jira-git-plugin,,,,['Java'],[129271]
+",provide utilities for easy management of WordPress sites,A PHP implemented library plugin to provide utilities for easy management of WordPress sites.,"['PHP', 'JavaScript', 'CSS']","[76496, 2851, 1125]"
+vivid-planet/kwf-newsletter-demo,Demo of a simple Newsletter System implemented using Koala Framework,,Newsletter System for web applications and websites,A PHP and CSS implemented Newsletter System through the open source Koala Framework for web applications and websites.,"['PHP', 'CSS']","[2638, 1071]"
+liu-chong/micropolis,"Open Source Micropolis, based on the original SimCity. sync from http://micropolis.googlecode.com/svn",,Micropolis program,"A C based open-source Micropolis program, a video game based on SimCity.","['C', 'C++', 'Tcl', 'Python', 'JavaScript', 'C#', 'Shell', 'PHP']","[3971740, 1285777, 869087, 842059, 222845, 13782, 5883, 1879]"
+CollectorsQuest/magnify-sdk,magnify.net API custom implementation,,video sharing platform,"A PHP based API iplementation for the video sharing platform, Magnify.net",['PHP'],[37510]
+NESCent/Taxonomy-Ontology-Tool,"Tool for constructing taxonomic ontologies from different authoritative sources for hierarchy, currently valid names, and synonyms.","This project is a tool for constructing taxonomic ontologies in OBO format (OWL format using taxa as individuals is in development).  In addition to the source and unit test code, the project contains an output ontology and several sample xml configuration files.",,,"['Java', 'Shell']","[260543, 338]"
+mteodori/jira-git-plugin,,,,,['Java'],[129271]
 sanguinariojoe/ocland,OpenCL Land is the OpenCL cloud computing interface,"ocland
 ======
 
@@ -5582,7 +5582,7 @@ echo 127.0.0.1 > ocland
 And you will see how a small OpenCL application is executed in the local devices availables in two ways, the usual one and through the network managed by ocland (The platform name vendor and suffix have an ""ocland(127.0.0.1)"" prefix identifier)
 
 It's magic!
-",,"['C', 'CMake', 'C++', 'Shell']","[787894, 31932, 11518, 1072]"
+",,,"['C', 'CMake', 'C++', 'Shell']","[787894, 31932, 11518, 1072]"
 grate-driver/grate,Grate: Open source Tegra2+ 2D/3D user-space,"# grate
 Grate is an anagram of ""tegra"", actually it is a collection of open source reverse-engineering tools aiming at the NVIDIA Tegra2+ 3D engine.
 
@@ -5595,7 +5595,7 @@ We have several useful documents of the Tegra architecture on our [wiki](https:/
 * [Fragment Shader ISA](https://github.com/grate-driver/grate/wiki/Fragment-Shader-ISA)
 * [Shader Linking](https://github.com/grate-driver/grate/wiki/Shader-Linking)
 * [Geometry Submission](https://github.com/grate-driver/grate/wiki/Geometry-Submission)
-",,"['C', 'Yacc', 'Lex', 'Makefile', 'Meson', 'GLSL', 'M4', 'Shell']","[1007340, 59123, 12237, 7546, 6884, 3828, 2478, 2321]"
+",,,"['C', 'Yacc', 'Lex', 'Makefile', 'Meson', 'GLSL', 'M4', 'Shell']","[1007340, 59123, 12237, 7546, 6884, 3828, 2478, 2321]"
 singuerinc/puppet-font_explorer_pro,,"# Font Explorer Pro Puppet Module for Boxen
 
 Experience an ultra-intuitive interface, a reliable architecture and a powerful feature set that provides quick access and control over your fonts.
@@ -5618,7 +5618,7 @@ Set `GITHUB_API_TOKEN` in your shell with a [Github oAuth Token](https://help.gi
 
 Then write some code. Run `script/cibuild` to test it. Check the `script`
 directory for other useful tools.
-",,"['Ruby', 'Puppet', 'Shell']","[200826, 3119, 416]"
+",,,"['Ruby', 'Puppet', 'Shell']","[200826, 3119, 416]"
 kzoll/ztlogger,PHP website traffic logger script,"# README for ZT Logger #
 
 ----------
@@ -5713,7 +5713,7 @@ Whitelisting form to alleviate the need to manually edit ipwldb.csv.  Whitelisti
 0.1.4 (2012/02/18) - Further improvements in Client IP, Proxy IP and Real IP detection.                                 Minor fix in log formatting
 0.1.3 (2012/02/13) - Improvements to Proxy detection
 0.1.2 (2011/08/08) - GeoIP GeoLocation Data: now displays City, Region, Country.                                 Attempts to identify ProxyIP and Real IP (may need further work).
-0.1.1 (2011/07/02) - Changes in variables names to eliminate conflicts with variable names in other packages.                                 Changes in log format.                                 Now includes version of ztlogger that is running.",,['PHP'],[124389]
+0.1.1 (2011/07/02) - Changes in variables names to eliminate conflicts with variable names in other packages.                                 Changes in log format.                                 Now includes version of ztlogger that is running.",,,['PHP'],[124389]
 couchbase/couchbase-net-client,The official Couchbase SDK for .NET Core and Full Frameworks,"The Official Couchbase .NET SDK ![](http://sdk.jenkins.couchbase.com/job/dotnet/job/couchbase-net-client-scripted-build-pipeline/badge/icon)
 [![Join the chat at https://gitter.im/couchbase/discuss](https://badges.gitter.im/couchbase/discuss.svg)](https://gitter.im/couchbase/discuss?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -5762,7 +5762,7 @@ Being an Open Source project, the Couchbase SDK depends upon feedback and submis
 Once the CLA is signed, a Couchbase engineer will push the pull request to Gerrit and one or more Couchbase engineers will review the submission. If it looks good they will then +2 the changeset and merge it with master. In addition, if the submission needs more work, you will need to amend the Changeset with another Patchset. Note that is strongly encouraged to submit a Unit Test with each submission and also include a description of the submission, what changed and what the result is.
 
 
-",,"['C#', 'JavaScript']","[1581575, 42807]"
+",,,"['C#', 'JavaScript']","[1581575, 42807]"
 colszowka/phantomjs-gem,Phantomjs via Rubygems: Auto-install phantomjs on demand for current platform. Comes with poltergeist integration.,"# PhantomJS as a RubyGem
 
 [![Build Status](https://travis-ci.org/colszowka/phantomjs-gem.png?branch=master)](https://travis-ci.org/colszowka/phantomjs-gem)
@@ -5841,7 +5841,7 @@ The gem version consists of 4 digits: The first 3 indicate the phantomjs release
 
 Note that this project merely simplifies the installation of the entirely separate PhantomJS project
 via a Ruby gem. You can find the license information for PhantomJS at http://phantomjs.org/
-",,"['Ruby', 'JavaScript']","[16071, 125]"
+",,,"['Ruby', 'JavaScript']","[16071, 125]"
 djblets/djblets,A collection of useful extensions for Django.,"Djblets
 =======
 
@@ -6103,7 +6103,7 @@ Related Projects
 
 * `Review Board`_ -
   Our dedicated open source code review product for teams of all sizes.
-",,"['Python', 'JavaScript', 'CSS', 'HTML']","[2342798, 403483, 71473, 36104]"
+",,,"['Python', 'JavaScript', 'CSS', 'HTML']","[2342798, 403483, 71473, 36104]"
 hhru/tornado,"Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.","Tornado Web Server
 ==================
 
@@ -6152,7 +6152,7 @@ Documentation
 
 Documentation and links to additional resources are available at
 http://www.tornadoweb.org
-",,"['Python', 'Shell', 'C', 'Ruby', 'HTML']","[1625160, 4070, 1664, 1428, 25]"
+",,,"['Python', 'Shell', 'C', 'Ruby', 'HTML']","[1625160, 4070, 1664, 1428, 25]"
 proycon/pynlpl,"PyNLPl, pronounced as 'pineapple', is a Python library for Natural Language Processing. It contains various modules useful for common, and less common, NLP tasks. PyNLPl can be used for basic tasks such as the extraction of n-grams and frequency lists, and to build simple language model. There are also more complex data types and algorithms. Moreover, there are parsers for file formats common in NLP (e.g. FoLiA/Giza/Moses/ARPA/Timbl/CQL). There are also clients to interface with various NLP specific servers. PyNLPl most notably features a very extensive library for working with FoLiA XML (Format for Linguistic Annotation).","PyNLPl - Python Natural Language Processing Library
 =====================================================
 
@@ -6230,12 +6230,12 @@ Documentation
 API Documentation can be found `here `__.
 
 
-",,"['Python', 'Shell', 'C++']","[1358116, 2333, 1452]"
+",,,"['Python', 'Shell', 'C++']","[1358116, 2333, 1452]"
 sonatype/plexus-compiler,,"The cannonical git repository is located at https://github.com/codehaus-plexus/plexus-compiler
 
 
-",,['Java'],[348738]
-tgjones/ormongo,"Ormongo is a very lightweight implementation of the ActiveRecord pattern, built on top of the 10gen Mongo C# driver.",,,['C#'],[139570]
+",,,['Java'],[348738]
+tgjones/ormongo,"Ormongo is a very lightweight implementation of the ActiveRecord pattern, built on top of the 10gen Mongo C# driver.",,,,['C#'],[139570]
 herumi/cybozulib,a tiny library for C++,"[![Build Status](https://travis-ci.org/herumi/cybozulib.png)](https://travis-ci.org/herumi/cybozulib)
 
 # cybozulib
@@ -6265,7 +6265,7 @@ Cybozu Inc. or any other organization which I belong to.
 
 # sais.hxx
 sais.hxx is written by Yuta Mori.
-",,"['C++', 'Python', 'Makefile', 'Batchfile', 'CMake']","[711221, 9737, 4446, 745, 150]"
+",,,"['C++', 'Python', 'Makefile', 'Batchfile', 'CMake']","[711221, 9737, 4446, 745, 150]"
 mkraft/fides,Add referential integrity to polymorphic Rails models.,"# Fides
 
 Enforces Rails polymorphic associations at the database level.
@@ -6361,7 +6361,7 @@ To run the postgresql integration tests you must first copy
 test/config/database.yml.example to test/config/database.yml and customize the 
 values for your local postgres install.
     
-",,['Ruby'],[30831]
+",,,['Ruby'],[30831]
 cerb-plugins/wgm.facebook,Cerb integration with Facebook's OAuth API,"Cerb Plugins - wgm.facebook
 ===========================================
 Copyright (C) 2017 Webgroup Media, LLC.  
@@ -6392,7 +6392,7 @@ This program is free software; you can redistribute it and/or modify it under th
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
-",,"['PHP', 'Smarty']","[17491, 5999]"
+",,,"['PHP', 'Smarty']","[17491, 5999]"
 alanbem/Josser,JSON-RPC client for PHP,"Josser - JSON-RPC client for PHP 5.3+
 =====================================
 
@@ -6525,7 +6525,7 @@ License
 -------
 
 Josser is licensed under the MIT License - see the LICENSE file for details
-",,['PHP'],[79295]
+",,,['PHP'],[79295]
 ramusus/kinopoiskpy,Python API to kinopoisk.ru,"# Kinopoiskpy
 
 [![PyPI version](https://img.shields.io/pypi/v/kinopoiskpy.svg)](https://pypi.python.org/pypi/kinopoiskpy) [![Circle CI](https://circleci.com/gh/ramusus/kinopoiskpy/tree/master.svg?style=shield)](https://circleci.com/gh/ramusus/kinopoiskpy) [![Build Status](https://img.shields.io/travis/ramusus/kinopoiskpy.svg?branch=master)](https://travis-ci.org/ramusus/kinopoiskpy) [![Coverage Status](https://coveralls.io/repos/ramusus/kinopoiskpy/badge.svg?branch=master)](https://coveralls.io/r/ramusus/kinopoiskpy)
@@ -6596,5 +6596,5 @@ Get content of person by ID:
 ## Contributors
 
 [Alex Rembish](http://github.com/rembish)
-",,['Python'],[63278]
-FrankHB/yslib,"The YSLib Project (main hg-git mirror) (NOTE: The README document in the repository is missing by design. Please go to the main repository for documentation, issues and pull requests.)",,,"['C++', 'C', 'Makefile', 'Shell', 'Objective-C']","[3467580, 819459, 59986, 30725, 534]"
+",,,['Python'],[63278]
+FrankHB/yslib,"The YSLib Project (main hg-git mirror) (NOTE: The README document in the repository is missing by design. Please go to the main repository for documentation, issues and pull requests.)",,,,"['C++', 'C', 'Makefile', 'Shell', 'Objective-C']","[3467580, 819459, 59986, 30725, 534]"
