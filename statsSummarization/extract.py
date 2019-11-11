@@ -91,7 +91,7 @@ for path in top_folder:
 				
 
 			#Extract strs from markdown
-					with open(dirpath+"/"+f) as md_file:
+					with open(dirpath+"/"+f, encoding = "ISO-8859-1") as md_file:
 						file_split = [line.split() for line in md_file]
 						file_split_flatten = [val for sublist in file_split for val in sublist]
 						md_file.close()
@@ -101,7 +101,7 @@ for path in top_folder:
 						tokenized_paragraph, code_block = parse_text_code(joined_paragraph)
 
 					txt_to_json.update({'file_name':f})
-					txt_to_json.update({'tokenized_body':joined_paragraph})
+					txt_to_json.update({'joined_body':joined_paragraph})
 					txt_to_json.update({'tokenized_body':tokenized_paragraph})
 					txt_to_json.update({'code':code_block})
 
@@ -139,18 +139,18 @@ for path in top_folder:
 					file_structure_sub.append(file)
 			file_structure.append(file_structure_sub)
 		txt_to_json.update({'file_structure': file_structure})
-		#print(txt_to_json)
+		print(txt_to_json)
 
 
-
+		
 		# save a pickle file for every project
-		pickle_save = open((path[0] + "/out.pickle"),"wb")
+		pickle_save = open((project_name + "/out.pickle"),"wb")
 		pickle.dump(txt_to_json, pickle_save)
 		pickle_save.close()
 
 print("Number of project in this batch: ", project_counter)
 print("Number of websites in this batch: ", len(all_urls))
-print(compute_tfidf(all_body))
+#print(compute_tfidf(all_body))
 
 
 """
