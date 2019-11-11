@@ -17,21 +17,27 @@ def find_url(str): # get urls starting with www.
 
 
 def jaccard_sim(dir_path, link): # calculate jaccard similarity score on dir_path and weblinks
-    dir_path = set(dir_path.split()) 
-    link = set(link.split())
+    dir_path = set(dir_path)
+    link = set(link)
     intersection = dir_path.intersection(link)
     return float(len(intersection)) / (len(dir_path) + len(link) - len(intersection))
 
 
-def keep_alpha(str):
+def keep_alpha(str): # keep only alphabets
 	return ''.join(x for x in str if x.isalpha()).lower()
 
 
-def sort_by_score(score, urls):
+def sort_by_score(score, urls): # sort by another list
 	return [x for _,x in sorted(zip(score,urls))]
 
 
-def parse_text_code(paragraph):
+def case_parser(paragraph): #camelCase PascalCase parser
+	cameled = re.sub('(.)([A-Z][a-z]+)', r'\1 \2', paragraph)
+	uncameled = re.sub('([a-z0-9])([A-Z])', r'\1 \2', cameled).lower()
+	return uncameled
+
+
+def parse_text_code(paragraph): # separates code block with natural language
 	paragraph = paragraph.replace("```", "@CODE@")
 
 	code_block_out = []
@@ -41,10 +47,9 @@ def parse_text_code(paragraph):
 		paragraph = paragraph.replace(b, '')
 		code_block_out.append(b.replace('@CODE@',''))
 
-	cleaned_paragraph = re.sub(r'[^a-zA-Z ]+', '', paragraph)
+	cleaned_paragraph = re.sub(r'[^a-zA-Z ]+', ' ', paragraph)
 	cleaned_paragraph = [w for w in word_tokenize(cleaned_paragraph.lower()) if len(w) < 25]
 	return cleaned_paragraph, code_block_out
-
 
 
 def compute_tfidf(docs):
@@ -61,110 +66,120 @@ def compute_tfidf(docs):
 	df.sort_values(by=["tfidf_score"],ascending=False)
 	"""
 
+	#camelCase PascalCase snake_case kebab-case
 
 
-top_folder = os.listdir('./')
-project_counter = 0
 
-all_urls = {}
-all_body = []
+def main():
 
-for path in top_folder:
+	top_folder = os.listdir('./')
+	project_counter = 0
 
-	project_name = path
-	txt_to_json = {}
-	file_structure = []
+	all_urls = {}
+	all_body = []
 
-	if os.path.isdir(path): # only walk through folders
-		project_counter += 1
-		for dirpath, dirs, files in os.walk(path):
-			file_structure_sub = []
+	for item in top_folder:
+
+		project_name = item
+		txt_to_json = {}
+		file_structure = []
+
+		if os.path.isdir(item): # only walk through folders
+			project_counter += 1
+			for dirpath, dirs, files in os.walk(item):
+				file_structure_sub = []
 
 
-			# discard hidden files
-			files = [f for f in files if not f[0] == '.']
-			dirs[:] = [d for d in dirs if not d[0] == '.']
-			
-
-			for f in files:
-				if f.lower().endswith('.md'): # only look at .md files
+				# discard hidden files
+				files = [f for f in files if not f[0] == '.']
+				dirs[:] = [d for d in dirs if not d[0] == '.']
 				
 
-			#Extract strs from markdown
-					with open(dirpath+"/"+f, encoding = "ISO-8859-1") as md_file:
-						file_split = [line.split() for line in md_file]
-						file_split_flatten = [val for sublist in file_split for val in sublist]
-						md_file.close()
+				for f in files:
+					if f.lower().endswith('.md'): # only look at .md files
+					
 
-						joined_paragraph = " ".join(file_split_flatten)
-						all_body.append(joined_paragraph)
-						tokenized_paragraph, code_block = parse_text_code(joined_paragraph)
+				#Extract strs from markdown
+						with open(dirpath+"/"+f, encoding = "ISO-8859-1") as md_file:
+							file_split = [line.split() for line in md_file]
+							file_split_flatten = [val for sublist in file_split for val in sublist]
+							md_file.close()
 
-					txt_to_json.update({'file_name':f})
-					txt_to_json.update({'joined_body':joined_paragraph})
-					txt_to_json.update({'tokenized_body':tokenized_paragraph})
-					txt_to_json.update({'code':code_block})
+							joined_paragraph = " ".join(file_split_flatten)
+							joined_paragraph = case_parser(joined_paragraph) # parsing camel and pascal cases
+							tokenized_paragraph, code_block = parse_text_code(joined_paragraph)
 
+							all_body.append(project_name + f + ' '.join(tokenized_paragraph))
 
-			# Extract URLs
-					for i in sent_tokenize(joined_paragraph):
-						urls = find_url(i)
-						if len(urls) > 0:
-							if len(urls) > 3: # if more than 3 weblinks fetched, calculate similarity score
-								similarity_score = []
-								for i in urls:
-									similarity_score.append(jaccard_sim(dirpath, i))
-								sorted_urls = sort_by_score(similarity_score, urls)
-								all_urls.update({project_name: sorted_urls[-3:]})
-								txt_to_json.update({'websites': (project_name, sorted_urls[-3:])})
-							else:
-								all_urls.update({project_name: urls})
-								txt_to_json.update({'websites': (project_name, urls)})
+						txt_to_json.update({'project_name': project_name})
+						txt_to_json.update({'file_name':f})
+						txt_to_json.update({'joined_body':joined_paragraph})
+						txt_to_json.update({'tokenized_body':tokenized_paragraph})
+						txt_to_json.update({'code':code_block})
 
 
-			# get file structure
-				## folders
-			path = dirpath.split('/')
-			path_name = keep_alpha(os.path.basename(dirpath))
-			folder = (len(path), path_name, 'folder')
-			file_structure_sub.append(folder)
-
-				## files
-			for f in files:
-				file_name_ext = os.path.splitext(f)
-				file_name = keep_alpha(file_name_ext[0])
-				file_ext = file_name_ext[1][1:].lower()
-				if file_name:
-					file = (len(path), file_name, file_ext)
-					file_structure_sub.append(file)
-			file_structure.append(file_structure_sub)
-		txt_to_json.update({'file_structure': file_structure})
-		print(txt_to_json)
+				# Extract URLs
+						for i in sent_tokenize(joined_paragraph):
+							urls = find_url(i)
+							if len(urls) > 0:
+								if len(urls) > 2: # if more than 3 weblinks fetched, calculate similarity score
+									similarity_score = []
+									for i in urls:
+										weblink = i[4:].split('.', 1)[0]
+										similarity_score.append(jaccard_sim(dirpath, weblink))
+									sorted_urls = sort_by_score(similarity_score, urls)
+									all_urls.update({project_name: sorted_urls[-3:]})
+									txt_to_json.update({'websites': (project_name, sorted_urls[-3:])})
+								else:
+									all_urls.update({project_name: urls})
+									txt_to_json.update({'websites': (project_name, urls)})
 
 
-		
-		# save a pickle file for every project
-		pickle_save = open((project_name + "/out.pickle"),"wb")
-		pickle.dump(txt_to_json, pickle_save)
-		pickle_save.close()
+				# get file structure
+					## folders
+				path = dirpath.split('/')
+				path_name = keep_alpha(os.path.basename(dirpath))
+				folder = (len(path), path_name, 'folder')
+				file_structure_sub.append(folder)
 
-print("Number of project in this batch: ", project_counter)
-print("Number of websites in this batch: ", len(all_urls))
-#print(compute_tfidf(all_body))
-
-
-"""
-# Extracting URLS for web scrapping
-pickle_save = open("all_urls.pickle","wb")
-pickle.dump(all_urls, pickle_save)
-pickle_save.close()
-"""
+					## files
+				for f in files:
+					file_name_ext = os.path.splitext(f)
+					file_name = keep_alpha(file_name_ext[0])
+					file_ext = file_name_ext[1][1:].lower()
+					if file_name and file_ext:
+						file = (len(path), file_name, file_ext)
+						file_structure_sub.append(file)
+				file_structure.append(file_structure_sub)
+			txt_to_json.update({'file_structure': file_structure})
+			#print(txt_to_json)
 
 
 
-"""
-# TO LOAD PICKLE FILE
-pickle_load = open(FILE_NAME,"rb")
-loaded = pickle.load(pickle_load)
-print(loaded)
-"""
+			# save a pickle file for every project
+			pickle_save = open((project_name + "/out.pickle"),"wb")
+			pickle.dump(txt_to_json, pickle_save)
+			pickle_save.close()
+
+	print("Number of project in this batch: ", project_counter)
+	print("Number of websites in this batch: ", len(all_urls))
+	print(compute_tfidf(all_body))
+
+
+	# Extracting URLS for web scrapping
+	pickle_save = open("all_urls.pickle","wb")
+	pickle.dump(all_urls, pickle_save)
+	pickle_save.close()
+
+	"""
+	# TO LOAD PICKLE FILE
+	pickle_load = open("all_urls.pickle","rb")
+	loaded = pickle.load(pickle_load)
+	print(loaded)
+	"""
+
+
+if __name__ == '__main__':
+    main()
+
+
