@@ -6,6 +6,9 @@ import pandas as pd
 import pickle
 from nltk.tokenize import sent_tokenize, word_tokenize
 from collections import Counter
+
+from anytree import Node, RenderTree
+
 from sklearn.feature_extraction.text import TfidfVectorizer 
 tfidf_vectorizer=TfidfVectorizer(use_idf=True)
 
@@ -74,7 +77,7 @@ def main():
 
 	top_folder = os.listdir('./')
 	project_counter = 0
-
+	empty_readme_counter = 0
 	all_urls = {}
 	all_body = []
 
@@ -83,10 +86,13 @@ def main():
 		project_name = item
 		txt_to_json = {}
 		file_structure = []
+		file_tree = Node(project_name)
 
 		if os.path.isdir(item): # only walk through folders
-			project_counter += 1
 			for dirpath, dirs, files in os.walk(item):
+				print(type(dirpath), type(dirs), type(files))
+				print(type(dirpath), type(dirs), type(files))
+
 				file_structure_sub = []
 
 
@@ -108,7 +114,8 @@ def main():
 							joined_paragraph = " ".join(file_split_flatten)
 							joined_paragraph = case_parser(joined_paragraph) # parsing camel and pascal cases
 							tokenized_paragraph, code_block = parse_text_code(joined_paragraph)
-
+							if len(tokenized_paragraph) < 20:
+								empty_readme_counter += 1
 							all_body.append(project_name + f + ' '.join(tokenized_paragraph))
 
 						txt_to_json.update({'project_name': project_name})
@@ -137,16 +144,21 @@ def main():
 
 				# get file structure
 					## folders
+
 				path = dirpath.split('/')
+				path_tree = Node(path)
+
 				path_name = keep_alpha(os.path.basename(dirpath))
 				folder = (len(path), path_name, 'folder')
 				file_structure_sub.append(folder)
+				this_folder = Node(folder, parent = path_tree)
+				this_path = Node(folder, parent = file_tree)
 
 					## files
 				for f in files:
 					file_name_ext = os.path.splitext(f)
 					file_name = keep_alpha(file_name_ext[0])
-					file_ext = file_name_ext[1][1:].lower()
+					file_ext = case_parser(file_name_ext[1][1:])
 					if file_name and file_ext:
 						file = (len(path), file_name, file_ext)
 						file_structure_sub.append(file)
@@ -156,14 +168,22 @@ def main():
 
 
 
+			for pre, fill, node in RenderTree(file_tree):
+			    print("%s%s" % (pre, node.name))
+
+			exit()
 			# save a pickle file for every project
+			project_counter += 1
 			pickle_save = open((project_name + "/out.pickle"),"wb")
 			pickle.dump(txt_to_json, pickle_save)
 			pickle_save.close()
 
+
 	print("Number of project in this batch: ", project_counter)
 	print("Number of websites in this batch: ", len(all_urls))
-	print(compute_tfidf(all_body))
+	print("Number of empty READMEs in this batch: ", empty_readme_counter)
+
+	#print(compute_tfidf(all_body))
 
 
 	# Extracting URLS for web scrapping
@@ -180,6 +200,7 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
 
+
+    main()
 
