@@ -7,11 +7,15 @@ import pickle
 from nltk.tokenize import sent_tokenize, word_tokenize
 from collections import Counter
 
+from nltk.tokenize.treebank import TreebankWordDetokenizer
+
+
 from anytree import Node, RenderTree
 
 from sklearn.feature_extraction.text import TfidfVectorizer 
 tfidf_vectorizer=TfidfVectorizer(use_idf=True)
 
+from langdetect import detect
 
 
 
@@ -118,11 +122,22 @@ def main():
 								empty_readme_counter += 1
 							all_body.append(project_name + f + ' '.join(tokenized_paragraph))
 
+							
+							## Detect Language of all md files ##
+							## use the tokenized_paragraph param to capture .md's without code
+							untokenized_paragraph = TreebankWordDetokenizer().detokenize(tokenized_paragraph)
+							lang = detect(joined_paragraph)
+
+							
+
+
 						txt_to_json.update({'project_name': project_name})
 						txt_to_json.update({'file_name':f})
 						txt_to_json.update({'joined_body':joined_paragraph})
 						txt_to_json.update({'tokenized_body':tokenized_paragraph})
 						txt_to_json.update({'code':code_block})
+
+						txt_to_json.update({'natural_language':lang})
 
 
 				# Extract URLs
